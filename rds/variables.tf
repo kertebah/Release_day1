@@ -1,4 +1,4 @@
-variable "vpc_id" {
+/*variable "vpc_id" {
   type = string
 }
 
@@ -10,3 +10,4 @@ variable "sg_ec2_id" {
   type = string
 }
 
+*/
