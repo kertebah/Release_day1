@@ -1,11 +1,15 @@
 variable "vpc_id" {
-  type = string
+  description = "VPC ID"
+  type        = string
 }
 
 variable "private_subnet" {
-  type = string
+  description = "ID of the private subnet"
+  type        = string
 }
 
 variable "sg_ec2_id" {
-  type = string
+  description = "Security group ID of the EC2 instance"
+  type        = string
 }
+
