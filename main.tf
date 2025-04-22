@@ -16,3 +16,6 @@ module "rds" {
   private_subnet = module.networking.private_subnet
   sg_ec2_id      = module.ec2.sg_id
 }
+
+
+
