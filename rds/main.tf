@@ -7,6 +7,7 @@ resource "aws_db_instance" "rds" {
   identifier              = "mydb"
   allocated_storage       = 20
   engine                  = "mysql"
+  engine_version          = "8.0.35" 
   instance_class          = "db.t2.micro"
   username                = "admin"
   password                = "password123"
