@@ -66,6 +66,6 @@ module "ec2" {
 module "rds" {
   source         = "./rds"
   vpc_id         = module.networking.vpc_id
-  private_subnet = module.networking.private_subnet
+  private_subnets = module.networking.private_subnets
   sg_id          = aws_security_group.rds_sg.id
 }
