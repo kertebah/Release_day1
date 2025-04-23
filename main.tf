@@ -1,12 +1,26 @@
+provider "aws" {
+  region = var.region
+}
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+
+  required_version = ">= 1.0"
+}
+
 module "networking" {
   source = "./networking"
   region = var.region
 }
 
-# Create SGs in root
 resource "aws_security_group" "ec2_sg" {
-  name        = "ec2-sg"
-  vpc_id      = module.networking.vpc_id
+  name   = "ec2-sg"
+  vpc_id = module.networking.vpc_id
 
   ingress {
     from_port   = 22
@@ -24,8 +38,8 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_security_group" "rds_sg" {
-  name        = "rds-sg"
-  vpc_id      = module.networking.vpc_id
+  name   = "rds-sg"
+  vpc_id = module.networking.vpc_id
 
   ingress {
     from_port       = 3306
