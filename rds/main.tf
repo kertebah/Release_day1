@@ -1,4 +1,4 @@
-/*resource "aws_security_group" "rds_sg" {
+resource "aws_security_group" "rds_sg" {
   name        = "rds-sg"
   description = "Allow MySQL from EC2"
   vpc_id      = var.vpc_id
@@ -36,4 +36,3 @@ resource "aws_db_instance" "rds" {
 
   depends_on = [aws_security_group.rds_sg, aws_db_subnet_group.main]
 }
-*/

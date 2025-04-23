@@ -10,12 +10,12 @@ module "ec2" {
   sg_rds_id     = module.rds.sg_id
 }
 
-/*module "rds" {
+module "rds" {
   source         = "./rds"
   vpc_id         = module.networking.vpc_id
   private_subnet = module.networking.private_subnet
   sg_ec2_id      = module.ec2.sg_id
 }
-*/
+
 
 
