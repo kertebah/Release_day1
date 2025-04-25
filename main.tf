@@ -69,3 +69,6 @@ module "rds" {
   private_subnets = module.networking.private_subnets
   sg_id          = aws_security_group.rds_sg.id
 }
+
+
+#ghjkl

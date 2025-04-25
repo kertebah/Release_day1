@@ -26,3 +26,6 @@ resource "aws_subnet" "private_b" {
   cidr_block        = "10.0.11.0/24"
   availability_zone = "ca-central-1b"
 }
+
+
+##wwww

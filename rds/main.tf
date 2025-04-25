@@ -14,3 +14,6 @@ resource "aws_db_instance" "rds" {
   vpc_security_group_ids  = [var.sg_id]
   db_subnet_group_name    = aws_db_subnet_group.main.name
 }
+
+
+#fghvj

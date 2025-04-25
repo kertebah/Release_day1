@@ -5,3 +5,6 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids = [var.sg_id]
   associate_public_ip_address = true
 }
+
+
+##ggggggg
