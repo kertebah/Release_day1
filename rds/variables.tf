@@ -9,3 +9,7 @@ variable "private_subnets" {
 variable "sg_id" {
   type = string
 }
+
+
+
+#dfghj

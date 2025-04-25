@@ -3,3 +3,6 @@ variable "region" {
   type        = string
   default     = "ca-central-1"  # or any valid AWS region
 }
+
+
+#ghjkl
